@@ -1,13 +1,14 @@
 package studio1;
 
-import support.cse131.ArgsProcessor;
+import java.util.Scanner;
 
 public class Hello {
 	
 	public static void main(String[] args) {
-		ArgsProcessor ap = new ArgsProcessor(args);
+		Scanner in = new Scanner(System.in);
 		
-		String mood = ap.nextString("How are you feeling today?");
+		System.out.println("How are you feeling today?");
+		String mood = in.nextLine();
 		
 		System.out.println("Hello and welcome to CSE 131!");
 		System.out.println("You seem to be feeling " + mood);

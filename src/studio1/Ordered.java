@@ -1,6 +1,6 @@
 package studio1;
 
-import support.cse131.ArgsProcessor;
+import java.util.Scanner;
 
 public class Ordered {
 
@@ -8,10 +8,13 @@ public class Ordered {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		ArgsProcessor ap = new ArgsProcessor(args);
-		int x = ap.nextInt("Value for x?");
-		int y = ap.nextInt("Value for y?");
-		int z = ap.nextInt("Value for z?");
+		Scanner in = new Scanner(System.in);
+		System.out.println("Value for x?");
+		int x = in.nextInt();
+		System.out.println("Value for y?");
+		int y = in.nextInt();
+		System.out.println("Value for z?");
+		int z = in.nextInt();
 
 	}
 
